@@ -20,9 +20,9 @@
 
 ---
 
-## 📖 Sobre o Projeto
+## 📖 Sobre o Repositório
 
-Aqui você pode escrever uma descrição mais completa e detalhada. Fale sobre a motivação por trás do projeto, o problema que ele se propõe a resolver e qual o seu grande diferencial. Seja claro e explique o valor que seu código entrega.
+Um repositório onde coloco todos os códigos de python que faço, um lugar onde guardo todo o meu aprendizado na linguagem.
 
 ---
 
