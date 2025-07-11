@@ -52,4 +52,3 @@ Mostre as ferramentas, frameworks e bibliotecas que fizeram seu projeto ganhar v
 
 
 ```bash
-python main.py --input seu_arquivo.csv
