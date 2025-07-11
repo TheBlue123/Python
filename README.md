@@ -1,7 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/TheBlue123/Python/main/.github/logo.png" alt="Project Logo" width="150">
   <h1>🐍 Python Project 🐍</h1>
-  <p><strong>Uma descrição curta e impactante do que seu projeto faz.</strong></p>
 
   <p>
     <a href="https://github.com/TheBlue123/Python/stargazers">
@@ -52,42 +50,6 @@ Mostre as ferramentas, frameworks e bibliotecas que fizeram seu projeto ganhar v
 
 ---
 
-## 🚀 Instalação e Uso
-
-Guia passo a passo para que qualquer pessoa possa rodar seu projeto localmente.
-
-### **Pré-requisitos**
-
-* Python 3.9 ou superior
-* Git
-
-### **Passo a Passo**
-
-1.  **Clone o repositório:**
-    ```bash
-    git clone [https://github.com/TheBlue123/Python.git](https://github.com/TheBlue123/Python.git)
-    cd Python
-    ```
-
-2.  **Crie um ambiente virtual e ative-o:**
-    ```bash
-    # Windows
-    python -m venv venv
-    .\venv\Scripts\activate
-
-    # Linux / macOS
-    python3 -m venv venv
-    source venv/bin/activate
-    ```
-
-3.  **Instale as dependências:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-### **Executando a Aplicação**
-
-Forneça um exemplo claro de como iniciar seu script ou aplicação.
 
 ```bash
 python main.py --input seu_arquivo.csv
