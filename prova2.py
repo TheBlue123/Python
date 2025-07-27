@@ -44,6 +44,7 @@ def encontrar_sensores_alerta(lista_humidade, lista_vento):
     A função deve retornar uma LISTA com os ÍNDICES dos sensores em alerta.
     Exemplo de retorno: [1, 3] (significa que o sensor 1 e o sensor 3 estão em alerta).
     """
+    contador = 0
     indices_alerta = []
     
     # Crie seu código aqui...
@@ -51,7 +52,13 @@ def encontrar_sensores_alerta(lista_humidade, lista_vento):
     # para ter acesso ao índice 'i'.
     # Em cada iteração, verifique a condição de alerta usando 'or'.
     # Se a condição for verdadeira, adicione o ÍNDICE 'i' à lista 'indices_alerta'.
-    print(indices_alerta)
+    for i in range(len(lista_humidade)):
+        humidade = lista_humidade[i]
+        vento = lista_vento[i]
+        if humidade > 85 or vento > 60:
+            contador += 1
+            indices_alerta.append(i)
+            
     
     
     
@@ -71,9 +78,19 @@ def categorizar_temperaturas(matriz_leituras):
     # Para cada temperatura, use if/elif/else para descobrir a qual categoria ela pertence
     # e incremente o valor correspondente no dicionário.
     
+    categorias = {"Frio": 0, "Ameno": 0, "Quente": 0}
+    for linha in matriz_leituras: 
+        for temperatura in linha:
+         if temperatura < 20:
+             categorias["Frio"] += 1
+         elif 20 <= temperatura <= 29:
+             categorias["Ameno"] += 1
+         else:
+             categorias["Quente"] +=1
     
     
-    return {} # Retorna um dicionário vazio por padrão
+    
+    return categorias # Retorna um dicionário vazio por padrão
 
 
 # --- DADOS E BLOCO DE TESTE (NÃO ALTERAR) ---
@@ -120,7 +137,7 @@ if __name__ == "__main__":
 
     # Teste da Questão 3
     categorias = categorizar_temperaturas(matriz_leituras)
-    resultado_esperado_q3 = {'Frio': 4, 'Ameno': 14, 'Quente': 6}
+    resultado_esperado_q3 = {'Frio': 5, 'Ameno': 12, 'Quente': 7}
     print("\nQuestão 3: Contagem de Temperaturas por Categoria")
     if resultado_esperado_q3 == categorias:
         print("CERTA!    =D")
