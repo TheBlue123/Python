@@ -51,6 +51,7 @@ def encontrar_sensores_alerta(lista_humidade, lista_vento):
     # para ter acesso ao índice 'i'.
     # Em cada iteração, verifique a condição de alerta usando 'or'.
     # Se a condição for verdadeira, adicione o ÍNDICE 'i' à lista 'indices_alerta'.
+    print(indices_alerta)
     
     
     
