@@ -24,8 +24,14 @@ def calcular_media_temperaturas_sem_extremos(matriz_leituras):
         menor = min(linhas)
         copialista = list(linhas)
 
-        copialista.remove(maior)
-        copialista.remove(menor)
+        if maior == menor:
+            # Remove duas ocorrências se todos os valores forem iguais
+            copialista.remove(maior)
+            if copialista:
+                copialista.remove(maior)
+        else:
+            copialista.remove(maior)
+            copialista.remove(menor)
         
         if copialista:
             media = sum(copialista)/len(copialista)
